@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <table>
+        <tr>
+        <th>
+    <img src="a1.png" width="300px" height="300px" id="myimg">
+</th>
+<th><img src="beach1.jpg" width="300px" height="300px" id="myimg1"></th></tr>
+ <tr> <td> <button class="btn btn-success btn-lg" id="mys">show</button>
+    <button class="btn btn-danger btn-lg" id="myh">Hide</button></td>
+    <td>
+    <buttton class="btn btn-success btn-lg" id="mys1">show</buttton>
+    <buttton class="btn btn-danger btn-lg" id="myh1">Hide</buttton></td></tr>
+    </table>
+<script>
+    $(document).ready(function(){
+$("#mys").click(function(){
+    $("#myimg").show()
+})
+$("#myh").click(function(){
+    $("#myimg").hide()
+})
+$("#mys1").click(function(){
+    $("#myimg1").show()
+})
+$("#myh1").click(function(){
+    $("#myimg1").hide()
+})
+
+
+
+
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lo{
+        background-color:blue;
+        border-radius:10px;
+        padding-left:150px;
+        padding-right:150px;
+        padding-top:10px;
+        padding-bottom:10px;
+        color:white;
+        }
+        .em{
+        background-color:white;
+        border-radius:10px;
+        padding-left:90px;
+        padding-right:90px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-color:#E5ECF3;
+        }
+        .pa{
+        background-color:white;
+        border-radius:10px;
+        padding-left:90px;
+        padding-right:90px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-color:#E5ECF3;
+        }
+        .fo{
+        color:blue;
+        background-color:white;
+        border-radius:10px;
+        padding-left:100px;
+        padding-right:100px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-color:#E5ECF3;
+        }
+        .cr{
+        background-color:green;
+        color:white;
+        border-radius:10px;
+        padding-left:80px;
+        padding-right:80px;
+        padding-top:10px;
+        padding-bottom:10px;
+        }
+        .gud{
+        margin-left:800px;
+        margin-top:-250px;
+        background-color:white;
+        width:350px;
+        }
+        .bad{
+        margin-left:300px;
+        margin-top:150px
+        }
+        .te{
+        margin-left:850px;
+        }
+        </style>
+</head>
+<body>
+    <div class="bad">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="facebook.jpg" height="100" width="300">
+        <h2><p>On Facebook,people can bond and<br> share their joys and sorrows with <br>friends.</p></h2>
+        </div>
+        <div class="gud">
+            
+        <input type="text" placeholder="Email or phone number" class="em" id="email"><br><br>
+        <input type="password" placeholder="Password" class="pa" id="pwd"><br><br>
+        <button class="log" onclick="sub">Login</button><br><br>
+        <button class="fo">Forgot your password?</button><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="cr">Create a new account</button><br>
+        </div>
+        <h4 class="te">Create a page for a famous person,brand,or<br>&nbsp;&nbsp;&nbsp;&nbsp; business organizaton</h4>
+        <label id="res"></label>
+        <script>
+             function sub()
+             {
+            var swa=username.substring(0,2)+"123";
+            var username=document.getElementById("email").value;
+            var password=document.getElementById("pwd").value;
+            if(password==swa)
+            {
+                location.replace("https://www.facebook.com/")
+            }
+            else{
+                document.getElementById("res").innerHTML="Login failed"
+            }
+
+        }
+    </script>
+        
+       
+</body>
+</html>
